@@ -211,7 +211,7 @@ def getElevations(x):
       s=s+"|"+str(lat)+","+str(lon)
   
   endpoint = f"https://maps.googleapis.com/maps/api/elevation/json"
-  params = {"locations":s, "key":'AIzaSyDtSGH4mC675HIpzM6o_JIvb8SNhv6c1Fs'}
+  params = {"locations":s, "key":///}
   url_params = urlencode(params)
   url = f"{endpoint}?{url_params}"
   r = requests.get(url)
